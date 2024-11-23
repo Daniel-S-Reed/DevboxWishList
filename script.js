@@ -141,9 +141,9 @@ async function generateList() {
         wishList[x].c[4].v +
         "'> <img src='" +
         wishList[x].c[0].v +
-        "' class = 'hoverImage'></image><button class = 'filterButton' onclick = " +
+        "' class = 'hoverImage'></image><button class = 'filterButton' onclick = window.open('" +
         wishList[x].c[1].v +
-        ">" +
+        "','_blank') >" +
         wishList[x].c[2].v +
         "<br>" +
         wishList[x].c[3].v +
@@ -154,9 +154,9 @@ async function generateList() {
         wishList[x].c[4].v +
         "'> <img src='" +
         wishList[x].c[0].v +
-        "' class = 'hoverImage'></img><button class = 'filterButton' onclick = " +
+        "' class = 'hoverImage'></img><button class = 'filterButton' onclick = window.open('" +
         wishList[x].c[1].v +
-        ">" +
+        "','_blank') >" +
         wishList[x].c[2].v +
         "<br>" +
         wishList[x].c[3].v +
