@@ -1,0 +1,194 @@
+.buttonstyle {
+  width: 200px;
+  height: 50px;
+  background-color: rgba(250, 250, 250, 0.85);
+  margin: 3px;
+  font-size: 25px;
+  border-radius: 20px;
+  font-family: "Comic Sans MS";
+}
+
+.filterDiv {
+  background-color: white;
+  position: relative;
+  color: #ffffff;
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  text-align: center;
+  margin: 10px;
+  display: none; /* Hidden by default */
+  border-radius: 20px;
+}
+
+.filterButton {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0);
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  font-size: 17.5px;
+  border-radius: 20px;
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  border: none;
+}
+
+.filterButton:hover {
+  opacity: 0.7;
+}
+
+.miniButton {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(200, 250, 200, 0.85);
+  margin: 3px;
+  font-size: 25px;
+  border-radius: 20px;
+  font-family: "Comic Sans MS";
+}
+
+h1 {
+  font-size: 45px;
+  width: 85%;
+}
+
+body {
+  height: 500px;
+  background-image: url("birthday background.png");
+  background-size: cover;
+  background-color: rgb(255, 0, 0);
+  margin-bottom: 50px;
+  font-family: "Comic Sans MS";
+}
+
+P {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  width: 90%;
+}
+
+.next {
+  margin-top: 75px;
+  background-color: rgba(255, 0, 0, 0.9);
+  width: 90%;
+  margin-bottom: 7.5%;
+  border-radius: 75px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.hoverImage {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.show {
+  display: inline-block;
+}
+
+.filterDiv:hover .hoverImage {
+  opacity: 0.25;
+}
+
+.filterDiv:hover .filterButton {
+  color: rgba(0, 0, 0, 1);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 0, 1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgba(0, 175, 175, 0.9);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #0046ff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

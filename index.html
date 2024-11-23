@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>DanWishList</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body
+    onload="loadItems()"
+    style="background-image: Url('birthday background.png')"
+  >
+    <script src="script.js"></script>
+    <center>
+      <div id="next" class="next">
+        <br />
+        <h1>Welcome to Daniel's Wish list!</h1>
+        <p>Click on the buttons to filter the list.</p>
+        <div id="myBtnContainer">
+          <button
+            class="btn active buttonstyle"
+            onclickck="filterSelection('all')"
+          >
+            All Items
+          </button>
+          <button
+            class="btn buttonstyle"
+            onclick="filterSelection('HarryPotter')"
+          >
+            Harry Potter
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection('Puzzles')">
+            Puzzles
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection('Models')">
+            Models
+          </button>
+          <button
+            class="btn buttonstyle"
+            onclick="filterSelection('BrainTeasers')"
+          >
+            Brain Teasers
+          </button>
+          <button
+            class="btn buttonstyle"
+            onclick="filterSelection('MarbleRun')"
+          >
+            Marble Run
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection('Books')">
+            Books
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection('Other')">
+            Other
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection('New')">
+            New!
+          </button>
+          <br />
+          <button class="btn miniButton" onclick="filterSelection('0')">
+            $0-$10
+          </button>
+          <button class="btn miniButton" onclick="filterSelection('1')">
+            $10-$20
+          </button>
+          <button class="btn miniButton" onclick="filterSelection('2')">
+            $20-$30
+          </button>
+          <button class="btn miniButton" onclick="filterSelection('3')">
+            $30-$40
+          </button>
+          <button class="btn miniButton" onclick="filterSelection('4')">
+            $40-$50
+          </button>
+          <button class="btn miniButton" onclick="filterSelection('5')">
+            $50-$60
+          </button>
+          <button class="btn miniButton" onclick="filterSelection('6+')">
+            $60+
+          </button>
+        </div>
+        <br />
+        <p>Select the organization method</p>
+        <p>
+          Alphabetical
+          <label class="switch">
+            <input type="checkbox" id="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          Numerical
+        </p>
+        <br />
+        <div class="container" id="container"></div>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+      <br /><br />
+    </center>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </body>
+</html>
